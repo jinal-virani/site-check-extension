@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Checker</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Site Checker</div>
+  <form id="target" class="target" autocomplete="off">
+    <input id="url" type="text" spellcheck="false" placeholder="https://example.com" aria-label="Website to check">
+    <button type="submit" class="btn ghost">Load</button>
+  </form>
+  <div class="grow"></div>
+  <span id="progress" class="progress" aria-live="polite"></span>
+  <button id="runAll" class="btn" type="button">Run all checks</button>
+  <button id="download" class="btn ghost" type="button" disabled>Download PDF report</button>
+  <button id="close" class="close" type="button" aria-label="Close panel (Esc)" title="Close (Esc)" hidden>&times;</button>
+</header>
+<div class="shell">
+  <nav class="nav" aria-label="Checks">
+    <input id="filter" class="filter" type="search" placeholder="Filter checks" aria-label="Filter checks">
+    <ul id="navList"></ul>
+  </nav>
+  <main id="panel" class="panel" tabindex="-1"></main>
+</div>
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="vendor/jspdf.plugin.autotable.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
