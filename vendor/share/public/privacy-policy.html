@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Site Checker</title>
+<style>
+  :root{color-scheme:light dark;--bg:#fff;--fg:#1c1d21;--muted:#5d6068;--line:#e3e4e8;--accent:#5a6b00}
+  @media (prefers-color-scheme:dark){:root{--bg:#111214;--fg:#ececee;--muted:#9a9ca3;--line:#2a2c31;--accent:#d6f43a}}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 6px}
+  h2{font-size:1.2rem;margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+  .meta{color:var(--muted);margin:0 0 24px}
+  .sum{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin:24px 0}
+  ul{padding-left:1.2em} li{margin:4px 0}
+  code{font:.9em ui-monospace,Consolas,monospace}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Site Checker (Chrome extension) · Last updated: October 29, 2026</p>
+
+<div class="sum"><strong>In short:</strong> Site Checker runs inside your browser. We have no servers, no accounts and no analytics. We do not collect, store, sell or share your personal data.</div>
+
+<h2>1. What Site Checker does</h2>
+<p>Site Checker lets you run technical checks (DNS, SSL, security headers, tech stack, performance and more) on the website you are viewing, and export the results as a PDF. It only does this after you click the extension icon.</p>
+
+<h2>2. Information we do not collect</h2>
+<p>We do not operate any server that receives data from the extension. We do not collect your name, email, browsing history, IP address or any other personal information, and we do not use cookies, tracking or analytics of our own.</p>
+
+<h2>3. Information processed on your device</h2>
+<ul>
+  <li><strong>The page you are viewing.</strong> After you click the icon, the extension reads that page's HTML, the list of resources it loaded and some JavaScript variable names, to detect technologies, links, trackers and mixed content. This stays on your device.</li>
+  <li><strong>Cookies.</strong> The extension lists the cookie names and their flags (Secure, HttpOnly, SameSite, expiry) for the site you check. Cookie values are never read or shown.</li>
+  <li><strong>Redirects.</strong> It observes redirect responses to show the redirect chain of the site you check. This is read-only.</li>
+  <li><strong>Results and reports.</strong> Results are kept in memory while the panel is open and are discarded when you close it. PDF reports are created on your device and saved only if you download them.</li>
+</ul>
+
+<h2>4. Third-party services that receive the website address</h2>
+<p>To produce a check, your browser sends the address of the website you are checking (the hostname, and for a few checks the full page URL) directly to the public service that supplies that data. Like any web request, these services can see your IP address. The panel shows the data source under every check. The services are:</p>
+<ul>
+  <li>DNS and network data: Google Public DNS, Cloudflare DNS, Quad9, AdGuard DNS, ipwho.is, Shodan InternetDB, rdap.org, HackerTarget</li>
+  <li>Certificates and TLS: Qualys SSL Labs, crt.sh, Certspotter, hstspreload.org</li>
+  <li>Performance and SEO: Google PageSpeed Insights (receives the full page URL), Tranco, Internet Archive (Wayback Machine)</li>
+  <li>Reputation: Have I Been Pwned, abuse.ch URLhaus, OpenPhish</li>
+  <li>Screenshot: thum.io, with WordPress mShots as a fallback (both receive the full page URL)</li>
+</ul>
+<p>The extension also makes requests to the website you are checking, such as its home page, <code>robots.txt</code>, <code>sitemap.xml</code> and <code>security.txt</code>. Each of these services and websites has its own privacy policy, which we do not control.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+  <li><strong>activeTab and scripting:</strong> open the panel over your current tab and read that page after you click the icon.</li>
+  <li><strong>Access to all websites:</strong> fetch the site's own files and headers and call the services above. You can check any site, so this cannot be limited in advance.</li>
+  <li><strong>webRequest:</strong> read-only observation of redirects.</li>
+  <li><strong>cookies:</strong> show cookie names and flags for the checked site.</li>
+</ul>
+
+<h2>6. Data sharing and sale</h2>
+<p>We do not sell or transfer user data to third parties, other than the requests to the services listed in section 4 that are needed to run the checks you ask for. We do not use or transfer data for purposes unrelated to Site Checker's single purpose, or to determine creditworthiness or for lending. Our use of information complies with the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+
+<h2>7. Remote code</h2>
+<p>All code, including the PDF library, is bundled inside the extension. It does not load or run remote code.</p>
+
+<h2>8. Children</h2>
+<p>Site Checker is a developer tool and is not directed at children under 13.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If this policy changes, we will update the date above and, for significant changes, mention it in the extension's release notes.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <a href="mailto:viranijinal7670@gmail.com">YOUR-EMAIL@example.com</a></p>
+</main>
+</body>
+</html>
